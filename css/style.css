@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--black);
+}
+
+:root
+{
+    --primary-orange: #ff4d00;
+    --FadedOrange: rgba(255, 77, 0, 0.493);
+    --FadedBrown: rgba(167, 52, 14, 0.4);
+    --white: white;
+    --black: black;
+    --grey: grey;
+    --lightGrey: rgba(192, 189, 189, 0.226);
+    --background-Color: white;
+    --CalendarBg: var(--lightGrey);
+    --BoxBg: var(--white);
+}
+
+.header
+{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img
+{
+    height: 7vh;
+}
+
+
+
+/* Side Nav Bar */
+#sidebar div.openMenu i
+    {
+        margin-left: 30px;
+        font-size: 27px;
+    }
+
+    #sidebar 
+    {
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background: #ff4d00;
+        left: -300px;
+        top: 0;
+        transition: .4s;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar div.closeMenu i
+    {
+        font-size: 25px;
+        color: var(--white);
+        margin-top: 25px;
+        padding-left: 25px;
+    }
+
+    #sidebar ul li 
+    {
+        list-style: none;
+        color: #fff;
+        font-size: 17px;
+        padding: 26px 24px;
+    }
+
+    #sidebar ul li.active
+    {
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    #sidebar .toggle-btn 
+    {
+        position: absolute;
+        top: 25px;
+        left: 330px;
+        font-size: 25px;
+    }
+
+    .toggle-btn span 
+    {
+        width: 45px;
+        height: 4px;
+        background: #000;
+        display: block;
+        margin-top: 4px;
+    }
+
+    #sidebar.active 
+    {
+        left: 0;
+    }
+
+
+
+/* Carousel CSS */
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+    display: flex;
+    flex-direction: row;
+}
+#slider figure div {
+    width: 100%;
+    height: 25vh;
+	float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: violet;
+}
+
+#slider div img
+{
+    width: 100%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Student Info */
+.userNameBar
+{
+    width: 100%;
+    height: 9vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name
+{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.pfp
+{
+    height: 8vh;
+    border-radius: 50%;
+    border: 2px solid orange;
+    margin-right: 30px;
+}
+
+
+
+/* This is a search bar */
+.ServicesSearchBar
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.ServicesSearchBar input
+{
+    width: 80%;
+    height: 4vh;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    background-color: var(--lightGrey);
+    border: none;
+}
+
+
+/* This is just text */
+.Text
+{
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.Text span
+{
+    margin-left: 30px;
+}
+
+
+
+
+/* Services CSS */
+.Services
+{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.ServiceBox
+{
+    height: 17vh;
+    width: 65%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 2px #969696;
+    cursor: pointer;
+}
+
+.ServiceBox img
+{
+    height: 7vh;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ServiceBox span
+{
+    margin-top: 1vh;
+    height: 5vh;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bottom Nav Bar */
+.bottomNavBar
+{
+    width: 100%;
+    height: 8vh;
+    background-color: var(--primary-orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul.bottomNav
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul.bottomNav li
+{
+    list-style: none;
+    text-align: center;
+    width: 25%;
+}
+
+ul.bottomNav li i
+{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+ul.bottomNav li:not(:nth-child(4n)) 
+{
+    border-right: 1px solid var(--FadedBrown);
+}
+
+
+
+
+
+
+
+
+/* Login and Sign Up Page CSS */
+.LSContainer
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LSLogo, .LSButtons
+{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LSLogo img
+{
+    width: 50%;   
+}
+
+.LSButtons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Login Page CSS */
+.LoginHeader
+{
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.LoginHeader span
+{
+    font-size: 30px;
+}
+
+.LoginForm
+{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginForm form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginForm input
+{
+    height: 5vh;
+    width: 70%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--black);
+    margin-bottom: 5vh;
+}
+
+#buttonCSS
+{
+    background-color: var(--primary-orange);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 10em;
+    margin-bottom: 15%;
+    outline: none;
+    border: none;
+}
+
+.LoginLogo
+{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginLogo img
+{
+    height: 9vh;
+}
+
+.backButton
+{
+    position: absolute;
+    z-index: 25;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 30px;
+}
